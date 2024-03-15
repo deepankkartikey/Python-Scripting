@@ -1,18 +1,15 @@
 """
     This script downloads youtube video using the link provided by user in argument
-    first argument: type of url : video or playlist
-    second argument: url
+    Asks users for following inputs:
+    1st input: YouTube URL
+    2nd input: URL type (Video OR Playlist)
 """
 from pytube import YouTube, Playlist
 from sys import argv
 import os
 
-# 0th argument is always program name
-# 1st argument is first command line parameter
-# 2nd argument is second command line parameter
-
-link_type = argv [1]
-link_url = argv[2]
+link_url = input("Enter YouTube URL: ")
+link_type = input("Enter type of URL (Video OR Playlist): ")
 
 download_dir_name = "yt-downloads"
 
