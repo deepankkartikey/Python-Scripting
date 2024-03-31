@@ -20,7 +20,7 @@ def get_prices_by_link(link):
     for result in search_results:
         price_as_text = result.find("span", {"class":"s-item__price"}).text
         price_as_text = price_as_text.strip()
-        print(price_as_text)
+        # print(price_as_text)
         if "to" in price_as_text:
             continue
         # C $2,706.50 - price format in scraped data
@@ -28,6 +28,27 @@ def get_prices_by_link(link):
         item_prices.append(price)
     return item_prices
 
+def remove_outliers(prices, m=2):
+    """
+    Neglects all other prices 2 standard deviations more/less than the mean price
+    """
+    data = np.array(prices)
+    return data[abs(data - np.mean(data)) < m * np.std(data)]
+
+def get_average(prices):
+    return np.mean(prices)
+
+def save_to_file(prices):
+    """
+    Save today's average price into csv file
+    """
+    fields = [datetime.today().strftime("%B-%D-%Y"), np.around(get_average(prices), 2)]
+    with open("prices.csv", "a", newline="") as f:
+        writer = csv.writer(f)
+        writer.writerow(fields)
+
 if __name__ == "__main__":
     prices = get_prices_by_link(LINK)
-    print(prices)
+    # print(prices)
+    prices_without_outliers = remove_outliers(prices)
+    save_to_file(prices)
