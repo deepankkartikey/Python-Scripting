@@ -1,3 +1,7 @@
-watchdogs
-pytube
-PyPDF2
+watchdogs==2.0.1
+pytube==15.0.0
+PyPDF2==3.0.1
+bs4==0.0.2
+requests==2.28.1
+numpy==1.26.4
+datetime==5.5
