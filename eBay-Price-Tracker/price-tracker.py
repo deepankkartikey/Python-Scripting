@@ -4,7 +4,9 @@ import numpy as np
 import csv
 from datetime import datetime
 
-LINK = "https://www.ebay.ca/sch/i.html?_from=R40&_trksid=p2334524.m570.l1311&_nkw=m3+macbook+pro&_sacat=0&_odkw=macbook+pro&_osacat=0"
+# LINK = "https://www.ebay.ca/sch/i.html?_from=R40&_trksid=p2334524.m570.l1311&_nkw=m3+macbook+pro&_sacat=0&_odkw=macbook+pro&_osacat=0"
+
+product_link = input("Enter Product URL from eBay: ")
 
 def get_prices_by_link(link):
     """
@@ -48,7 +50,9 @@ def save_to_file(prices):
         writer.writerow(fields)
 
 if __name__ == "__main__":
-    prices = get_prices_by_link(LINK)
+    prices = get_prices_by_link(product_link)
     # print(prices)
     prices_without_outliers = remove_outliers(prices)
     save_to_file(prices)
+    print("--> Today's price: ", np.around(get_average(prices), 2))
+    print("--> Open prices.csv file to check how today's price compares to previous days!")
