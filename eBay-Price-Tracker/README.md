@@ -7,4 +7,5 @@
 
 ## Usage 
 - Execute the script: `python3 price-tracker.py`
-- Check prices.csv file for a record by today's date for current price
+- Console displays today's price
+- Check prices.csv file for how current price compares to previous days
