@@ -25,6 +25,7 @@ names = []
 phones = []
 emails = []
 skills = []
+
 def convert_pdf_txt(file):
     """
     """
@@ -43,7 +44,7 @@ def parse_resume(textfile):
     phone_regex = re.compile("(\d{3}[-\.\s]??\d{3}[-\.\s]??\d{4}|\(\d{3}\)\s*\d{3}[-\.\s]??\d{4}|\d{3}[-\.\s]??\d{4})   ") # source for regex : https://stackoverflow.com/a/3868861
     # annotate resume textfile contents
     doc = nlp(textfile)
-    name = [entity.text for entity in doc.ents if entity.label_ is "PERSON"][0]
+    name = [entity.text for entity in doc.ents if entity.label_ == "PERSON"][0]
     print(name)
     # using spacy's like_email attribute, extract email
     email = [word for word in doc if word.like_email == True][0]
@@ -70,3 +71,5 @@ result_dict['skills'] = skills
 
 result_df = pd.DataFrame(result_dict)
 print(result_df)
+
+result_df.to_csv('ouput/csv/parsed_resumes.csv')
