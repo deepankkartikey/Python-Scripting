@@ -2,6 +2,14 @@ This repository consists of multiple small python automation scripts that I crea
 
 ### Getting Started
 - Install (latest) Python version
+- Install virtual environment utility
+   ```
+   pip3 install virtualenv
+   ```
+- Create a virtual environment
+   ```
+   virtualenv <environment_name>
+   ```
 - Run the following command in the parent directory to install Python dependecies needed to run the scripts:
    ```
    pip3 install -r requirements.txt
