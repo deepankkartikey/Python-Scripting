@@ -1,8 +1,8 @@
 This repository consists of multiple small python automation scripts that I created while learning Python!
 
 ### Getting Started
-- Install (latest) Python version
-- Install virtual environment utility
+- Install (latest) Python version and set PATH variable
+- Install virtual environment utility 
    ```
    pip3 install virtualenv
    ```
