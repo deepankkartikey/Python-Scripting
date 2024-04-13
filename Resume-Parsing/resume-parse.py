@@ -16,23 +16,13 @@ phones = []
 emails = []
 skills = []
 
-# load the language model
-nlp = spacy.load("en_core_web_sm")
-
-# dictionary to store important information from resume
-result_dict = {'name': [], 'phone': [], 'email': [], 'skills': []}
-names = []
-phones = []
-emails = []
-skills = []
-
 def convert_pdf_txt(file):
     """
     """
     output_filename = os.path.basename(os.path.splitext(file)[0]) + ".txt"
     output_filepath = os.path.join("output/txt", output_filename)
     # save output text file to specific location
-    pdf2txt.main(args=[f, "--outfile", output_filepath])
+    pdf2txt.main(args=[file, "--outfile", output_filepath])
     print(output_filepath + " saved successfully!")
     return open(output_filepath).read()
 
@@ -72,4 +62,4 @@ result_dict['skills'] = skills
 result_df = pd.DataFrame(result_dict)
 print(result_df)
 
-result_df.to_csv('ouput/csv/parsed_resumes.csv')
+result_df.to_csv('output/csv/parsed_resumes.csv')
