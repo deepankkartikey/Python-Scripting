@@ -31,7 +31,7 @@ def parse_resume(textfile):
     """ 
     # define set of skills to be extracted from resume
     skillset = re.compile("javascript|java|python|sql|jenkins|git|agile")
-    phone_regex = re.compile("(\d{3}[-\.\s]??\d{3}[-\.\s]??\d{4}|\(\d{3}\)\s*\d{3}[-\.\s]??\d{4}|\d{3}[-\.\s]??\d{4})   ") # source for regex : https://stackoverflow.com/a/3868861
+    phone_regex = re.compile("(\d{3}[-\.\s]??\d{3}[-\.\s]??\d{4}|\(\d{3}\)\s*\d{3}[-\.\s]??\d{4}|\d{3}[-\.\s]??\d{4})") # source for regex : https://stackoverflow.com/a/3868861
     # annotate resume textfile contents
     doc = nlp(textfile)
     name = [entity.text for entity in doc.ents if entity.label_ == "PERSON"][0]
