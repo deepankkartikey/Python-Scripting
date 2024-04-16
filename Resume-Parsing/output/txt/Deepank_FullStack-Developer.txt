@@ -1,0 +1,117 @@
+GitHub | LinkedIn | deepankkartikey@gmail.com | +1-343-777-4779 | Ottawa, Canada (Willing to Relocate) 
+
+Deepank Kartikey 
+
+SKILLS
+Programming:   Java, Python, JavaScript, TDD, Object Oriented, Algorithms 
+Back end:  
+Front end:  
+Databases: 
+DevOps:  
+Others:   
+
+MVC, Spring Framework, Microservices, Node.js, JSON, RESTful API 
+HTML, CSS, Web, Angular, React, UI mockups, Figma 
+Relational Database, Oracle, PostgreSQL, NoSQL, MongoDB 
+Docker, Containerization, S3, Lambda, Linux, Git, Jira, Confluence 
+JUnit, Debugging, Scrum, Agile, SDLC, Collaboration, Code Review 
+
+EXPERIENCE 
+University of Ottawa: Software Developer 
+
+May 2022 – Dec 2023 
+●  Pioneered development of a Python script, automating firewall rules verification with data from MS SharePoint Excel 
+
+● 
+
+thereby reducing manual verification time by 80% and achieving 98% accuracy. 
+Implemented Student Information API, employing rigorous test driven development with coverage of over 95% and 
+reducing data retrieval time by 75% 
+
+●  Developed scalable API for University recruiting using Spring Boot, driving a 40% improvement in response time and 
+
+enabling seamless integration across multiple departments. 
+
+●  Achieved superior software quality with unit testing using Jest leading to 80% reduction in post-release defects. 
+●  Reduced deployment time by 75% through robust Jenkins CI/CD pipeline for 3 major projects within scoped time. 
+
+ACI Worldwide:  Java Developer 
+
+Jan 2018 – Sep 2021 
+
+● 
+
+Implemented Struts to Spring conversion for enterprise fintech solution leading to better dependency management, 
+improved performance and high availability of 99.995%. 
+
+●  Designed & developed scalable microservice for configuration migration, thereby resulting in strategic portfolio 
+
+● 
+
+revenue growth by $1 million monthly. 
+Implemented and optimized a payment gateway notification system using Apache Kafka and Java, resulting in a 30% 
+increase in message throughput, processing over 5,000 messages per second, and reducing notification delivery 
+latency by 40%, enhancing the overall payment processing efficiency and user experience. 
+
+●  Designed and implemented Project Management Tools for PMs and stakeholders for quick onboarding of new clients 
+
+in a fast-paced environment thereby saving 50% of time and resources. 
+
+●  Debugged & resolved UAT/Production issues in payment gateway application driving monthly revenue of $5 million. 
+
+PROJECTS 
+Umple, Open Source Project (Github) 
+
+•  Migrated Umpleonline to Codemirror6 resulting in Improved Performance, Modular Modern Architecture, richer 
+
+features (like Autocompletion, Linting, Collaborative Editing), and future proofing the application. 
+
+•  Researched and implemented Collaborative Editing using WebSockets leveraging Socket IO, Express, Typescript 
+
+enabling over 1.5 million users to edit models in Umpleonline to foster teamwork and productivity. 
+
+Pariksha, (Github) 
+
+• 
+
+• 
+
+• 
+
+Engineered a dynamic full-stack web application, seamlessly integrating Spring Boot, Angular, and MySQL 
+technologies, resulting in a 20% improvement in overall functionality and user experience. 
+Implemented robust OAuth2 authentication, enhancing user security and achieving a 30% reduction in data 
+management incidents, while ensuring a responsive and engaging user interface. 
+Executed the successful deployment of the application on aws, optimizing performance and scalability, resulting in a 
+25% increase in application responsiveness and a 40% improvement in overall scalability. 
+
+EDUCATION 
+Master of Computer Science 
+BTech in Information Technology  
+
+VOLUNTEERING EXPERIENCE  
+
+University of Ottawa, Canada 
+       VIT University, Vellore 
+
+3.9/4.0   
+9.27/10  
+
+2021 - 2023 
+2014 - 2018 
+
+●  Mentored 30 new hires with initial technical & soft-skills training through online and offline modes. 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+

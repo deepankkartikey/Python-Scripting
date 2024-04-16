@@ -26,3 +26,6 @@ This repository consists of multiple small python automation scripts that I crea
 - **[Price-Tracker](./eBay-Price-Tracker/)**
    - Get current price of an eBay product by giving the eBay product URL as user input
    - Currently, supports only eBay - more website supports will be added in future
+- **[Resume-Parser](./Resume-Parsing/)**
+   - Reads resume file in PDF format
+   - Extracts important information like Name, Skills, Email and Phone number for shortlisting candidates
