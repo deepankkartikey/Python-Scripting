@@ -1,5 +1,5 @@
 ### Set Up
-- After installing all dependencies using [](../README.md)
+- After installing all dependencies using [requirements.txt](../README.md) file
 - Download spacy package using following command
     ```
     python -m spacy download en_core_web_sm
