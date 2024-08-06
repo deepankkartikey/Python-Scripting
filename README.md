@@ -29,3 +29,6 @@ This repository consists of multiple small python automation scripts that I crea
 - **[Resume-Parser](./Resume-Parsing/)**
    - Reads resume file in PDF format
    - Extracts important information like Name, Skills, Email and Phone number for shortlisting candidates
+- **[Apartment-Finder](./Apartment-Hunting/)**
+   - Reads a rent budget from user
+   - Gets all apartments within the specified budget
