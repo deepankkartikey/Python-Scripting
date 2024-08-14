@@ -53,8 +53,12 @@ def send_email(apartments, email):
     msg['Subject'] = "Filtered Apartments List from Sleepwell Property Management"
 
     body = "Here are the apartments in your budget: \n"
-    for location, price, url in apartments:
+    for apartment in apartments:
+        location = apartment['listing_location']
+        price = apartment['rent']
+        url = apartment['listing_url']
         body += f"Title: {location}\nRent: {price}\nListing URL: {url}\n\n"
+    # print(apartments)
     
     msg.attach(MIMEText(body, 'plain'))
 
